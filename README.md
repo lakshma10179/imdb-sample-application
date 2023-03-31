@@ -5,6 +5,8 @@ Hello, Welcome to IMDB Sample Application.
 **
 The dataset you will use can be downloaded from IMDB https://datasets.imdbws.com/. Please note that this dataset is just an example, the application should be expected to handle billions of records.
 
+https://www.imdb.com/interfaces/
+
  
 **Problem Statement
 **
@@ -88,6 +90,13 @@ Question 2.1 :- Display the different titles of the 20 movies.
 
 You can run the below test class as well to check the result 
 **IMDBDataProcesserTest.py**
+
+
+![image](https://user-images.githubusercontent.com/129509447/229250729-cec76132-a117-4ad8-9a7b-9e6e07ef1ac1.png)
+
+
+![image](https://user-images.githubusercontent.com/129509447/229251209-908cbb00-8754-444e-af24-bf0006120749.png)
+
 
 
 
