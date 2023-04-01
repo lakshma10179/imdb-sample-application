@@ -22,7 +22,7 @@ Your task is to write a Spark application that can answer the following question
 Q1. Retrieve the top 20 movies with a minimum of 50 votes with the ranking determined by
 (numVotes/averageNumberOfVotes) * averageRating
 
-Below is the spark submit command we have to run to start the process 
+Below is the spark submit command to submit the spark application 
 
 **spark-submit IMDBDataProcesser.py inputs\name_basics.tsv inputs\title_akas.tsv inputs\title_basics.tsv inputs\title_crew.tsv inputs\title_episode.tsv inputs\title_principals.tsv inputs\title_rating.tsv**
 
