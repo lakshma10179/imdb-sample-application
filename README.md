@@ -16,10 +16,17 @@ Your task is to write a Spark application that can answer the following question
 Q1. Retrieve the top 20 movies with a minimum of 50 votes with the ranking determined by
 (numVotes/averageNumberOfVotes) * averageRating
 
+Below is the spark submit command we have to run to start the process 
+**spark-submit IMDBDataProcesser.py inputs\name_basics.tsv inputs\title_akas.tsv inputs\title_basics.tsv inputs\title_crew.tsv inputs\title_episode.tsv inputs\title_principals.tsv inputs\title_rating.tsv**
+
+
+inputs\name_basics.tsv, other parameters -- Input file location, if we are passing from different location then, we have to pass the same value here 
+
 
 STEP 1:-  Load the IMDB datasets into a Spark Data Frame.
 
-![image](https://user-images.githubusercontent.com/129509447/229247781-9d3b1e90-b328-4626-ab07-8af65958655e.png)
+![image](https://user-images.githubusercontent.com/129509447/229273508-db17c6ea-c5e5-4c43-b1c8-3e451d97a89a.png)
+
 
 STEP 2:- Filter out movies with less than 50 votes.
 
