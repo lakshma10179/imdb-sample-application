@@ -17,15 +17,20 @@ Q1. Retrieve the top 20 movies with a minimum of 50 votes with the ranking deter
 (numVotes/averageNumberOfVotes) * averageRating
 
 Below is the spark submit command we have to run to start the process 
+
 **spark-submit IMDBDataProcesser.py inputs\name_basics.tsv inputs\title_akas.tsv inputs\title_basics.tsv inputs\title_crew.tsv inputs\title_episode.tsv inputs\title_principals.tsv inputs\title_rating.tsv**
 
 
 inputs\name_basics.tsv, other parameters -- Input file location, if we are passing from different location then, we have to pass the same value here 
 
 
-STEP 1:-  Load the IMDB datasets into a Spark Data Frame.
+STEP 1:-  Load the IMDB datasets into a Spark Data Frame
+And performing argument length and file validation checks 
 
-![image](https://user-images.githubusercontent.com/129509447/229273508-db17c6ea-c5e5-4c43-b1c8-3e451d97a89a.png)
+![image](https://user-images.githubusercontent.com/129509447/229279594-5b3e686b-5e24-4dd2-88a7-acae17316af5.png)
+
+![image](https://user-images.githubusercontent.com/129509447/229279612-7cad23dc-aa1c-466b-9945-bb2c9cf450c9.png)
+
 
 
 STEP 2:- Filter out movies with less than 50 votes.
@@ -97,6 +102,11 @@ Question 2.1 :- Display the different titles of the 20 movies.
 
 You can run the below test class as well to check the result 
 **IMDBDataProcesserTest.py**
+
+To run the test class, please use the below link to get the results:- 
+
+**python IMDBDataProcessesTest.py inputs\name_basics.tsv inputs\title_akas.tsv inputs\title_basics.tsv inputs\title_crew.tsv inputs\title_episode.tsv inputs\title_principals.tsv inputs\title_rating.tsv**
+
 
 
 ![image](https://user-images.githubusercontent.com/129509447/229250729-cec76132-a117-4ad8-9a7b-9e6e07ef1ac1.png)
