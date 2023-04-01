@@ -14,7 +14,7 @@ spark = SparkSession.builder.appName('IMDB Data Processor').getOrCreate()
 
 # Check the length of sys.argv
 if len(sys.argv) != 8:
-    print("Invalid number of arguments. Please provide valid arguments from the console.")
+    print("********Invalid number of arguments. Please provide valid arguments from the console**********")
     sys.exit(1)
 
 
@@ -22,11 +22,11 @@ if len(sys.argv) != 8:
 def validate_file_path(file_path):
     # Validate the file path
     if not os.path.exists(file_path):
-        print("Invalid file path. The file does not exist.")
+        print("********Invalid file path. The file does not exist*******")
         sys.exit(1)
 
     if not os.path.isfile(file_path):
-        print("Invalid file path. Please provide the path to a file, not a directory.")
+        print("*******Invalid file path. Please provide the path to a file, not a directory*******")
         sys.exit(1)
 
     # Return the validated file path
