@@ -5,7 +5,7 @@
 # ----------------------------------------------------------------------------
 
 
-Hello, Welcome to IMDB Sample Application.
+Hello,
 
 **Data Source
 **
