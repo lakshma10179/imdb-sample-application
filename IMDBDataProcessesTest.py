@@ -1,7 +1,7 @@
+import argparse
 import sys
 import unittest
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import desc
 
 from IMDBDataProcesser import spark, retrieve_top_20_movies, retrieve_top_20_movies_credits, validate_file_path
 
@@ -26,7 +26,6 @@ class IMDBDataProcessesTest(unittest.TestCase):
 
     # Test for Question 1
     def test_top_20_movies(self):
-
         # Load the test dataset into Spark DataFrame
         name_basics_df = spark.read.option("header", "true").option("sep", "\t").option("multiLine", "true").csv(
             validate_file_path(self.name_basics_path))
@@ -49,6 +48,7 @@ class IMDBDataProcessesTest(unittest.TestCase):
 
         self.assertIsNotNone(top_20_movies)
         self.assertEqual(len(top_20_movies), 20)
+        print(f'Successfully completed the Unit Test Case for Q1')
 
     # Test for Question 2
     def test_top_20_movies_credits(self):
@@ -72,3 +72,5 @@ class IMDBDataProcessesTest(unittest.TestCase):
 
         self.assertIsNotNone(top_credits)
         self.assertEqual(len(top_credits), 10)
+        print(f'Successfully completed the Unit Test Case for Q2')
+
