@@ -1,8 +1,9 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
+#!/usr/bin/env python 3.10.10
+# ----------------------------------------------------------------------------
+# Created By  : Lakshma Kasu
+# Created Date: 01/04/2023
+# version ='1.0'
+# ----------------------------------------------------------------------------
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
