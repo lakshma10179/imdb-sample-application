@@ -30,8 +30,9 @@ Below is the spark submit command to submit the spark application
 inputs\name_basics.tsv, other parameters -- Input file location, if we are passing from different location then, we have to pass the same value here 
 
 
-STEP 1:-  Load the IMDB datasets into a Spark Data Frame
-And performing argument length and file validation checks 
+STEP 1:-  As part of the initial step, while running the spark application, we have to pass the input files/datasets, we are performing some validation check for the same and 
+Load the IMDB datasets into a Spark Data Frame
+
 
 ![image](https://user-images.githubusercontent.com/129509447/229279594-5b3e686b-5e24-4dd2-88a7-acae17316af5.png)
 
