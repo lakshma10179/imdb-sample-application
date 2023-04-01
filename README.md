@@ -113,6 +113,12 @@ To run the test class, please use the below link to get the results:-
 
 **python IMDBDataProcessesTest.py inputs\name_basics.tsv inputs\title_akas.tsv inputs\title_basics.tsv inputs\title_crew.tsv inputs\title_episode.tsv inputs\title_principals.tsv inputs\title_rating.tsv**
 
+Please find the below screenshots for the test evidence, ran the two test cases successfully
+
+**SCREENSHOT**
+
+![image](https://user-images.githubusercontent.com/129509447/229285667-fb0be60b-86f1-4fcd-ae61-045822b553b3.png)
+
 
 
 ![image](https://user-images.githubusercontent.com/129509447/229250729-cec76132-a117-4ad8-9a7b-9e6e07ef1ac1.png)
